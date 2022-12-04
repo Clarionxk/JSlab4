@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="para"></p>
+
+<script>
+    const element = document.getElementById("para");
+    setInterval(function() {element.innerHTML += "Long "}, 1000);
+    setInterval(function() {element.innerHTML += "Paragraph"}, 1500);
+    setInterval(function() {element.innerHTML += "Long Paragraph 2<br>"}, 2000);
+
+
+    setTimeout(function() {window.close()}, 6000);
+
+</script>
+
+</body>
+</html>
